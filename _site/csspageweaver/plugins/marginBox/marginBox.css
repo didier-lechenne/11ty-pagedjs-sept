@@ -1,7 +1,0 @@
-:root {
-    --color-marginBox: blue;
-}
-
-.no-marginBoxes{
-    --color-marginBox: transparent;
-}

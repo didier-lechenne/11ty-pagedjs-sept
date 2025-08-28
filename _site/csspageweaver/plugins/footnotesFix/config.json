@@ -1,9 +1,0 @@
-{
-	"name": "Footnotes",
-	"description": "Fix footnote reset",
-	"author": ["Julie Blanc"],
-	"licence": "MIT",
-	"version": "1.0",
-	"hook": "footnotes.js",
-	"stylesheet": "footnotes.css"
-}
