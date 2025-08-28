@@ -1,0 +1,23 @@
+{
+	"name": "breakColumn",
+	"description": "Marche pas - Force un saut de colonne",
+	
+	"ui": {
+		"title": "breakColumn",
+		"description": "",
+		"toggle": true,
+		"shortcut": [
+			{
+				"active": true,
+				"keys": ["B" ],
+				"description": ""
+			}
+		]
+	},
+	"parameters": {
+		"sample": null
+	},
+
+	"hook": "hook.js"
+	
+}
