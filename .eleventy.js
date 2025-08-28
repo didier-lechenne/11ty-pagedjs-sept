@@ -3,7 +3,7 @@ const config = require("./_11ty/config/siteData.js");
 const collectionsConfig = require("./_11ty/config/collections.js");
 const markdownPlugin = require("./_11ty/config/markdown.js");
 const filtersConfig = require("./_11ty/config/filters.js");
-const shortcodesConfig = require("./_11ty/config/shortcodes.js");
+const shortcodesConfig = require("./_11ty/config/mediaShortcodes.js");
 const transformsConfig = require("./_11ty/config/transforms.js");
 
 
@@ -35,7 +35,6 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
-    pathPrefix: "valentine",
     dir: {
       input: ".",
       output: "_site/",

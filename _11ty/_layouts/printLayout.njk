@@ -32,10 +32,9 @@
   <body class="print {{ bodyClass }}" lang="fr" >
     <!-- Main content -->
     <main class="main-content">
-      
-        
+
           <div class="container" >
-            {% for p in collections.printPages %}
+            {% for p in collections.sectionsPrint %}
             
             {% set templateName = p.data.template | default('default') %}
             {% include "templates/" + templateName + ".njk" %}
@@ -43,7 +42,9 @@
             {% endfor %}
           </div>
        
-     
     </main>
   </body>
 </html>
+
+
+
