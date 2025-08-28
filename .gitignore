@@ -19,3 +19,12 @@ Thumbs.db
 **/a_garder/
 a_garder/
 **/pas_utilisé/
+
+_site
+
+# logs
+*.log
+npm-debug.log*
+
+# Eleventy
+.cache/
