@@ -7,7 +7,6 @@ eleventyExcludeFromCollections: true
 
 # {{ title }}
 
-{% for chapitre in collections.chapitresPrint %}
-{{ chapitre.content | safe }}
-{% if not loop.last %}{% pageBreak %}{% endif %}
+{% for section in collections.sectionsPrint %}
+{{ section.content | safe }}
 {% endfor %}

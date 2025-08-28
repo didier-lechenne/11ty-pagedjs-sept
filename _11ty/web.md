@@ -7,9 +7,9 @@ eleventyExcludeFromCollections: true
 
 # {{ title }}
 
-{% for chapitre in collections.chapitresWeb %}
-## {{ chapitre.data.title }}
+{% for section in collections.sectionsWeb %}
+## {{ section.data.title }}
 
-{{ chapitre.content | safe }}
+{{ section.content | safe }}
 
 {% endfor %}

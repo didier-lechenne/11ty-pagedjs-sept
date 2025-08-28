@@ -3,7 +3,7 @@ const config = require('./siteData.js');
 module.exports = function (eleventyConfig) {
 
 // Collection spécifique pour le web
-  eleventyConfig.addCollection("chapitresWeb", function(collectionApi) {
+  eleventyConfig.addCollection("sectionsWeb", function(collectionApi) {
     return collectionApi.getFilteredByGlob(`${config.publicFolder}/content/*.md`)
       .filter(item => !item.data.draft)
       .filter(item => !item.data.show || item.data.show === "web")
@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Collection spécifique pour le print
-  eleventyConfig.addCollection("chapitresPrint", function(collectionApi) {
+  eleventyConfig.addCollection("sectionsPrint", function(collectionApi) {
     return collectionApi.getFilteredByGlob(`${config.publicFolder}/content/*.md`)
       .filter(item => !item.data.draft)
       .filter(item => !item.data.show || item.data.show === "print")
