@@ -15,3 +15,7 @@ Thumbs.db
 # IDE files
 .vscode
 .zed
+
+**/a_garder/
+a_garder/
+**/pas_utilisé/
