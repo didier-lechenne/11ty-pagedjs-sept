@@ -1,20 +1,20 @@
 {
-  "name": "eleventy-dual-output",
+  "name": "eleventy-pagedjs",
   "version": "1.0.0",
   "description": "Configuration Eleventy pour générer web et print avec Paged.js",
   "scripts": {
     "clean": "rimraf .cache _site",
-    "build:web": "BUILD_ENV=web npx @11ty/eleventy",
-    "build:print": "BUILD_ENV=print npx @11ty/eleventy",
+    "build:web": "cross-env BUILD_ENV=web npx @11ty/eleventy",
+    "build:print": "cross-env BUILD_ENV=print npx @11ty/eleventy",
     "build:both": "npm run build:web && npm run build:print",
-    "serve:web": "BUILD_ENV=web npx @11ty/eleventy --serve",
-    "serve:print": "BUILD_ENV=print npx @11ty/eleventy --serve --port=8081",
+    "serve:web": "cross-env BUILD_ENV=web npx @11ty/eleventy --serve",
+    "serve:print": "cross-env BUILD_ENV=print npx @11ty/eleventy --serve --port=8081",
     "generate:pdf": "node scripts/generate-pdf.js",
     "dev": "npm run serve:web",
     "preview:print": "npm run build:print && npm run serve:print",
     "production": "npm run build:both && npm run generate:pdf"
   },
-"dependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-fetch": "^5.0.1",
     "@11ty/eleventy-img": "^6.0.4",
