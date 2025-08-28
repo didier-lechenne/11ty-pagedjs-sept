@@ -8,7 +8,7 @@ const markdownItAbbr = require("markdown-it-abbr");
 const markdownItContainer = require("markdown-it-container");
 // const markdownItFigures = require("markdown-it-image-figures");
 
-const string = require("string");
+// const string = require("string");
 
 let globalNoteCounter = 0;
 
@@ -67,9 +67,9 @@ module.exports = function (eleventyConfig) {
     });
 
   // markdownify filter to parse frontmatter stuff
-  eleventyConfig.addFilter("markdownify", (markdownString) =>
-    md.render(markdownString ?? "")
-  );
+  // eleventyConfig.addFilter("markdownify", (markdownString) =>
+  //   md.render(markdownString ?? "")
+  // );
 
   eleventyConfig.setLibrary("md", md);
 };

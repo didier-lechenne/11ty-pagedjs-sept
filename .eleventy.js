@@ -21,7 +21,7 @@ module.exports = function(eleventyConfig) {
   filtersConfig(eleventyConfig);
   shortcodesConfig(eleventyConfig);
   transformsConfig(eleventyConfig);
-  passthroughConfig(eleventyConfig);
+
 
   eleventyConfig.setServerOptions({
     port: 3000,
