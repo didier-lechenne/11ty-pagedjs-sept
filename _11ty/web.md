@@ -1,6 +1,6 @@
 ---
 title: "Guide Eleventy Multi-Format"
-layout: "layouts/screenLayout.njk"
+layout: "screenLayout.njk"
 permalink: "index.html"
 eleventyExcludeFromCollections: true
 ---

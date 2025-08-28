@@ -37,11 +37,11 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk",
     pathPrefix: "valentine",
     dir: {
-      input: [config.publicFolder, "_11ty"],
+      input: ".",
       output: "_site/",
-      includes: "../_11ty/_includes",
-      layouts: "../_11ty/_layouts",
-      data: "../_11ty/_data",
+      includes: "_11ty/_includes",
+      layouts: "_11ty/_layouts",
+      data: "_11ty/_data",
     },
   };
 
